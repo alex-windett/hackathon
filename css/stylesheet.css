@@ -1,5 +1,8 @@
 body {
   font-family: 'Raleway', sans-serif;
+  background-image: url("http://wallalay.com/wp-content/uploads/2014/06/Desktop-Wallpapers-51.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 a {
@@ -11,6 +14,8 @@ nav {
   border: solid black;
   position: fixed;
   background: white;
+  height: 400px;
+  width: 100px;
 }
 
 
@@ -19,7 +24,6 @@ nav a {
   margin-bottom: 20px;
   list-style: none;
   display:block;
-  background: yellow;
 }
 
 .nav {
@@ -37,24 +41,24 @@ section h1 {
 }
 
 section, #home{
-  background-color: pink;
+  /*background-color: pink;*/
   margin: auto;
 }
 
-section, #about{
-  background-color: blue;
+#about{
+  background-color: #FAFBFA;
 }
-section, #skills{
-  background-color: green;
+#skills{
+  /*background-color: green;*/
 }
-section, #experience{
-  background-color: red;
+#experience{
+  background-color: #FAFBFA;
 }
-section, #projects{
-  background-color: orange;
+#projects{
+  /*background-color: orange;*/
 }
-section, #contact{
-  background-color: purple;
+#contact{
+  background-color: #FAFBFA;
 }
 
 h1 {

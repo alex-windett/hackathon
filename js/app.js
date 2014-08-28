@@ -17,6 +17,7 @@ $(function(){
 
 // scroll to certain section
   $nav_links.click(function(event){
+     // debugger
     $.scrollTo(
       $(this).attr("href"),
       {
@@ -25,14 +26,6 @@ $(function(){
       }
     );
   });
-
-$("#thumbnail").mouseenter(function(e){
-    $("#tooltip").show
-  })
-
-$("#thumbnail").mouseleave(function(e){
-    $("#tooltip").hide
-  })
 
   // $("#about").waypoint(function(down){
   //   alert("about");
