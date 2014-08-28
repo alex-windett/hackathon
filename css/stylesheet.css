@@ -14,7 +14,7 @@ nav {
   border: solid black;
   position: fixed;
   background: white;
-  height: 400px;
+  height: 700px;
   width: 100px;
 }
 
@@ -63,7 +63,7 @@ section, #home{
 
 h1 {
   font-size: 120px;
-  margin-top: auto;
+  margin-top: 10px;
 }
 
 .interests {
@@ -96,12 +96,24 @@ h1 {
   display: inline-block;
 }
 
-.listing_projects img {
-  width: 400px;
+.past_projects {
+  text-align: center;
+  width: 1200px;
+  margin: auto;
+}
+
+#thumbnail {
+  width: 550px;
   height: auto;
 }
 
+.contact {
+  text-align: center;
+}
+
 .contact li {
+  border: solid black 2px;
+  border-radius: 10px;
   display: inline-block; 
   padding: 30px;
   margin-right: 50px;
@@ -112,8 +124,14 @@ h1 {
   background-color: red;
 }
 
-#tooltip {
-  display:none;
-border:1px solid #F00;
-width:150px;
-}
+@media only screen and (max-width: 780px) {
+  .individual_project {
+    width: 80%;
+    margin: none;
+  }
+
+  .thumbnail {
+    width: 100%;
+  }
+
+  }
