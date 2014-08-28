@@ -20,14 +20,20 @@ $(function(){
     $.scrollTo(
       $(this).attr("href"),
       {
-        duration: 1000, 
-        // time taken to reach section
-        offset: {"left": 0, "top": 0}
-        // how far off it will go when section is reached
+        duration: 1000,   
+        offset: {"left": 0, "top": 10}
       }
     );
   });
 
+$("#thumbnail").mouseenter(
+  function(e){
+    $("#tooltip").show
+  })
+$("#thumbnail").mouseleave(
+  function(e){
+    $("#tooltip").hide
+  })
 
   // $("#about").waypoint(function(down){
   //   alert("about");

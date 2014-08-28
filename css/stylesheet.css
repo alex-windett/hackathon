@@ -1,9 +1,22 @@
-nav {
-  border: solid black;
+body {
+  margin-top: 40px;
 }
+
+nav {
+  left: -1;
+  top: 0; 
+  border: solid black;
+  position: fixed;
+  background: white;
+  width: 100%;
+  text-align: center;
+}
+
 
 nav ul li {
   display: inline-block;
+  padding-left: 100px;
+  text-align: center
 }
 
 section {
@@ -14,9 +27,8 @@ section h1 {
   text-align: center;
 }
 
-section #home{
+section, #home{
   background-color: pink;
-  text-align: center;
   margin: auto;
 }
 
@@ -44,7 +56,6 @@ h1 {
 .experience_logo {
   margin: auto;
   width: 900px;
-
 }
 
 .experience_logo img {
@@ -55,4 +66,26 @@ h1 {
 
 .experience_logo li {
   display: inline-block;
+}
+
+.listing_projects img {
+  width: 400px;
+  height: auto;
+}
+
+.contact li {
+  display: inline-block; 
+  padding: 30px;
+  margin-right: 50px;
+  background: white; 
+}
+
+.contact li:hover{
+  background-color: red;
+}
+
+#tooltip {
+  display:none;
+border:1px solid #F00;
+width:150px;
 }

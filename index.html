@@ -2,10 +2,12 @@
 <head>
   <title>Alex Windett</title>
 
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
   <link rel="stylesheet" type="text/css" media="all" href="css/grid.css" />
   <link rel="stylesheet" type="text/css" media="all" href="css/stylesheet.css" />
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  
 
   <script src="js/jquery-1.11.0.js"></script>
   <script src="js/app.js"></script>
@@ -14,6 +16,8 @@
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
   <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.15/jquery-ui.min.js"></script>
 </head>
 <body>
 
@@ -63,10 +67,39 @@
   
   <section id="projects">
     <h1>Projects</h1>
+    <div class="listing_projects">
+      <table>
+        <tr>  
+          <th>Thumbnail</th>
+          <th>Title</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Tic Tac Toe</td>
+          <td>My First Project</td>
+        </tr>
+        <tr>
+          <td><img id="thumbnail" src="photoapp.png"></td>
+          <div id="tooltip" >Text</div>
+          <td>Photo App</td>
+          <td>My Second Project</td>
+        </tr>
+      </table>
+
+    </div>
   </section>
   
   <section id="contact">
     <h1>Contact</h1>
+    <div class="contact">
+      <ul>
+        <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-envelope"></i> Message Me</a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-github-square"></i> View my Github</a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-file-text"></i> Download CV</a></li>
+      </ul>
+    </div>
   </section>
 </body>
 </html>
