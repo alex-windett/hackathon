@@ -2,54 +2,116 @@
 <head>
   <title>Alex Windett</title>
 
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
   <link rel="stylesheet" type="text/css" media="all" href="css/grid.css" />
   <link rel="stylesheet" type="text/css" media="all" href="css/stylesheet.css" />
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
 
   <script src="js/jquery-1.11.0.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+  <script src="js/ui-bootstrap-tpls-0.11.0.js"></script>
   <script src="js/app.js"></script>
   <script src="js/waypoints.min.js"></script>
   <script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
   <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
 </head>
 <body>
 
-<h1>Alex Windett</h1>
-
-<div class="pop"><<i class="icon-plus-sign"><img src="menu_icon.png"></i>
-  So simple so clean.
-</div>
-
-<img id='menu_icon' src="menu_icon.png">
+<!-- <img id='menu_icon' src="menu_icon.png"> -->
 
 <div id='#menu'>
   <nav>
-    <ul>
-      <li><a id="nav_about"  href="#about">About</a></li>
-      <li><a id="nav_skills"  href="#skills">Skills</a></li>
-      <li><a id="nav_expirience"  href="#expirience">Expirience</a></li>
-      <li><a id="nav_projects"  href="#projects">Projects</a></li>
-      <li><a id="nav_contact"  href="#contact">Contact</a></li>
-    </ul>
+      <a id="nav_about"  href="#about">About</a>
+      <a id="nav_skills"  href="#skills">Skills</a>
+      <a id="nav_experience"  href="#experience">Experience</a>
+      <a id="nav_projects"  href="#projects">Projects</a>
+      <a id="nav_contact"  href="#contact">Contact</a> 
   </nav>
 </div>
 
+  <section id="home">
+    <h1>Alex Windett</h1>
+    <p>Readymade keytar vegan put a bird on it. Brooklyn Banksy mlkshk aesthetic.</p>
+    <a id="nav_about" class="nav" href="#about">Discover More</a>
+      <!-- flows down to about section -->
+  </section>
+
   <section id="about">
+    <h1>About</h1>
+      <div class="interests">
+        <div class="col_1">
+          <h2>Something Interesting</h2>
+          <p>Readymade keytar vegan put a bird on it. Brooklyn Banksy mlkshk aesthetic.</p>
+        </div>
+        <div class="col_2">
+          <h2>Something Interesting</h2>
+          <p>Readymade keytar vegan put a bird on it. Brooklyn Banksy mlkshk aesthetic.</p>
+        </div>
+        <div class="col_3">
+          <h2>Something Interesting</h2>
+          <p>Readymade keytar vegan put a bird on it. Brooklyn Banksy mlkshk aesthetic.</p>
+        </div>
+      </div>
   </section>
   
   <section id="skills">
+    <h1>Skills</h1>
+      <div class="experience_logo">
+      <li>
+        <img src="html_logo.png">
+        <img src="html_logo.png">
+        <img src="html_logo.png">
+        <img src="html_logo.png">
+        <img src="html_logo.png">
+        <img src="html_logo.png">
+      </li>
+    </div>
   </section>
   
-  <section id="expirience">
+  <section id="experience">
+    <h1>Expirience</h1>
+
   </section>
   
   <section id="projects">
+    <h1>Projects</h1>
+    <div class="listing_projects">
+      <table>
+        <tr>  
+          <th>Thumbnail</th>
+          <th>Title</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Tic Tac Toe</td>
+          <td>My First Project</td>
+        </tr>
+        <tr>
+          <td><img id="thumbnail" src="photoapp.png"></td>
+          <div id="tooltip" >Text</div>
+          <td>Photo App</td>
+          <td>My Second Project</td>
+        </tr>
+      </table>
+    </div>
   </section>
   
   <section id="contact">
+    <h1>Contact</h1>
+    <div class="contact">
+      <ul>
+        <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-envelope"></i> Message Me</a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-github-square"></i> View my Github</a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-file-text"></i> Download CV</a></li>
+      </ul>
+    </div>
   </section>
 </body>
 </html>

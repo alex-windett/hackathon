@@ -1,13 +1,44 @@
-nav {
-  border: solid black;
+body {
+  font-family: 'Raleway', sans-serif;
 }
 
-nav ul li {
-  display: inline-block;
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  border: solid black;
+  position: fixed;
+  background: white;
+}
+
+
+nav a {
+  font-size: 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  display:block;
+  background: yellow;
+}
+
+.nav {
+  margin-left: 45%;
+  border: 2px solid black;
+  padding: 20px;
 }
 
 section {
   height: 900px;
+}
+
+section h1 {
+  text-align: center;
+}
+
+section, #home{
+  background-color: pink;
+  margin: auto;
 }
 
 section, #about{
@@ -16,7 +47,7 @@ section, #about{
 section, #skills{
   background-color: green;
 }
-section, #expirience{
+section, #experience{
   background-color: red;
 }
 section, #projects{
@@ -26,44 +57,59 @@ section, #contact{
   background-color: purple;
 }
 
+h1 {
+  font-size: 120px;
+  margin-top: auto;
+}
 
-//////////////////
+.interests {
+  width: 600px;
+  border: solid 5px white;
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  display: table;
+}
 
+.interests div {
+  border: solid 2px black;
+  display: inline-block;
+  display: table-cell;
+}
 
-.icon-plus-sign{color:green;cursor:pointer;}
-  i{font-size:3rem;}
+.experience_logo {
+  margin: auto;
+  width: 900px;
+}
 
+.experience_logo img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 50px;
+}
 
-.pop {
+.experience_logo li {
+  display: inline-block;
+}
+
+.listing_projects img {
+  width: 400px;
+  height: auto;
+}
+
+.contact li {
+  display: inline-block; 
+  padding: 30px;
+  margin-right: 50px;
+  background: white; 
+}
+
+.contact li:hover{
+  background-color: red;
+}
+
+#tooltip {
   display:none;
-  position: absolute;
-  z-index:9999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 20px;  
-  background: grey;
-  color: white;
-  text-align: center; }
-  .pop i{
-    position:absolute; 
-    right:4px; 
-    top:2px; 
-    font-size:2rem;
-    cursor:pointer;}
-    .pop i &:hover{
-      color:black;
-    }
-
-/*@media only screen and (min-width: 481px) {
-    i{font-size:2rem;}
-.pop {
-    left: 50%;
-    top: 50%;
-    @include transform(translate(-50%, -50%)); 
-    width: 50%;
-    height: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-  }
-}*/
+border:1px solid #F00;
+width:150px;
+}
