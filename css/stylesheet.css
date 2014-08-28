@@ -1,0 +1,23 @@
+nav ul li {
+  display: inline-block;
+}
+
+section {
+  height: 900px;
+}
+
+section, #about{
+  background-color: blue;
+}
+section, #skills{
+  background-color: green;
+}
+section, #expirience{
+  background-color: red;
+}
+section, #projects{
+  background-color: orange;
+}
+section, #contact{
+  background-color: purple;
+}
