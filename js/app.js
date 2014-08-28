@@ -26,12 +26,11 @@ $(function(){
     );
   });
 
-$("#thumbnail").mouseenter(
-  function(e){
+$("#thumbnail").mouseenter(function(e){
     $("#tooltip").show
   })
-$("#thumbnail").mouseleave(
-  function(e){
+
+$("#thumbnail").mouseleave(function(e){
     $("#tooltip").hide
   })
 
@@ -54,5 +53,6 @@ $("#thumbnail").mouseleave(
   // $("#contact").waypoint(function(down){
   //   alert("contact");
   // })
+
 
 });

@@ -1,22 +1,31 @@
 body {
-  margin-top: 40px;
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 nav {
-  left: -1;
-  top: 0; 
   border: solid black;
   position: fixed;
   background: white;
-  width: 100%;
-  text-align: center;
 }
 
 
-nav ul li {
-  display: inline-block;
-  padding-left: 100px;
-  text-align: center
+nav a {
+  font-size: 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  display:block;
+  background: yellow;
+}
+
+.nav {
+  margin-left: 45%;
+  border: 2px solid black;
+  padding: 20px;
 }
 
 section {
@@ -51,6 +60,21 @@ section, #contact{
 h1 {
   font-size: 120px;
   margin-top: auto;
+}
+
+.interests {
+  width: 600px;
+  border: solid 5px white;
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  display: table;
+}
+
+.interests div {
+  border: solid 2px black;
+  display: inline-block;
+  display: table-cell;
 }
 
 .experience_logo {
