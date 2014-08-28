@@ -9,6 +9,8 @@ $(function(){
   var $nav_projects = $("#nav_projects")
   var $nav_contact = $("#nav_contact")
 
+
+// scroll to certain section
   $nav_links.click(function(e){
     $.scrollTo(
       $(this).attr("href"),
@@ -20,24 +22,65 @@ $(function(){
       })
   })
 
-  $("#about").waypoint(function(down){
-    alert("about");
-  })
 
-  $("#skills").waypoint(function(down){
-    alert("skills");
-  })
+$(".icon-plus-sign").click(
+        function() {   
+            $(".pop").fadeIn('slow');
+        }
+    );
 
-  $("#expirience").waypoint(function(down){
-    alert("expirience");
-  })
+$(".pop i").click(
+        function() {   
+            $(".pop").fadeOut('fast');
+        }
+    );
 
-  $("#projects").waypoint(function(down){
-    alert("projects");
-  })
+var getIphoneWindowHeight = function() {
+  // Get zoom level of mobile Safari
+  // Such zoom detection might not work correctly on other platforms
+  // 
+  var zoomLevel = document.documentElement.clientWidth / window.innerWidth;
 
-  $("#contact").waypoint(function(down){
-    alert("contact");
-  })
+  // window.innerHeight returns height of the visible area. 
+  // We multiply it by zoom and get our real height.
+  return window.innerHeight * zoomLevel;
+};
+
+
+$("#menu").dialog({
+  autoOpen: false,
+  show: {
+    effect: "blind",
+    duration: 1000
+  },
+  hide: {
+    effect: "explode",
+    duration: 100
+  }
+})
+
+$("#menu_icon").click(function(){
+  $("#menu").dialog("open")
+  });
+
+  // $("#about").waypoint(function(down){
+  //   alert("about");
+  // })
+
+  // $("#skills").waypoint(function(down){
+  //   alert("skills");
+  // })
+
+  // $("#expirience").waypoint(function(down){
+  //   alert("expirience");
+  // })
+
+  // $("#projects").waypoint(function(down){
+  //   alert("projects");
+  // })
+
+  // $("#contact").waypoint(function(down){
+  //   alert("contact");
+  // })
 
 });
