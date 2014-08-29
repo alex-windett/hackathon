@@ -20,39 +20,40 @@ $(function(){
     $.scrollTo(
       $(this).attr("href"),
       {
-        duration: 1000,   
+        duration: 2000,   
         offset: {"left": 0, "top": 10}
       }
     );
   });
 
-$("#thumbnail").mouseenter(function(e){
-    $("#tooltip").show
-  })
+  $("#thumbnail_1").mouseenter(function(){
+    $(".1").show()
+  });
+  $("#thumbnail_1").mouseout(function(){
+     $(".1").hide()
+  });
 
-$("#thumbnail").mouseleave(function(e){
-    $("#tooltip").hide
-  })
+  $("#thumbnail_2").mouseenter(function(){
+    $(".2").show()
+  });
+  $("#thumbnail_2").mouseout(function(){
+     $(".2").hide()
+  });
 
-  // $("#about").waypoint(function(down){
-  //   alert("about");
-  // })
+  $("#thumbnail_3").mouseenter(function(){
+    $(".3").show()
+  });
+  $("#thumbnail_3").mouseout(function(){
+     $(".3").hide()
+  });
 
-  // $("#skills").waypoint(function(down){
-  //   alert("skills");
-  // })
-
-  // $("#experience").waypoint(function(down){
-  //   alert("experience");
-  // })
-
-  // $("#projects").waypoint(function(down){
-  //   alert("projects");
-  // })
-
-  // $("#contact").waypoint(function(down){
-  //   alert("contact");
-  // })
-
+// $("#skill_1").dialog({
+//   autoOpen:false,
+//   show: {
+//     effect: "blind",
+//     duration: 1000
+//   }.
+//   }
+// })
 
 });

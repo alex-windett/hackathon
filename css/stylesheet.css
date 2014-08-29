@@ -1,85 +1,123 @@
 
 body {
-  background: @window;
-  color: @font-color;
-  font-family: 'Nobile', Arial, Sans;
-  /*font-family: 'Raleway', sans-serif;*/
+  font-family: 'Raleway', sans-serif;
+/*  background-image: url("http://wallalay.com/wp-content/uploads/2014/06/Desktop-Wallpapers-51.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;*/
+  /*background-color: #fcf6e0;*/
+  color: #EBCB93;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #EBCB93;
 }
 
 nav {
-  /*border: solid black;*/
   position: fixed;
-  /*background: white;*/
+  height: 700px;
+  width: 150px;
 }
-
 
 nav a {
+  color: #181E23;
+  background: #EBCB93;
+  padding: 10px;
   font-size: 15px;
-  margin-bottom: 20px;
+  margin-top: 20px;
   list-style: none;
   display:block;
-  /*background: yellow;*/
+  margin-left: 10px;
 }
 
-.nav {
-  margin-left: 45%;
+nav a:hover {
+  background-color: #dfac52;
+}
+
+.about_button {
+  margin-left: 40%;
   border: 2px solid black;
   padding: 20px;
 }
 
 section {
   height: 900px;
+  width: 100%;
 }
 
 section h1 {
   text-align: center;
 }
 
-section, #home{
-  background-color: rgb(232,211,184) ;
-  margin: auto;
+#home{
+  background-color: #fcf6e0;
 }
 
-section, #about{
-  background-color: rgb(253, 246, 227);
+#about{
+  background-color: #181E23;
 }
-section, #skills{
-  background-color: rgb(253, 246, 227);
+#skills{
+  background-color:#181E23;
 }
-section, #experience{
-  background-color: rgb(253, 246, 227);
+#experience{
+  background-color: #181E23;
 }
-section, #projects{
-  background-color: rgb(253, 246, 227);
+#projects{
+  background-color:#181E23;
 }
-section, #contact{
-  background-color: rgb(253, 246, 227);
+#contact{
+  background-color: #181E23;
 }
 
 h1 {
-  font-size: 70px;
-  margin-top: auto;
+  font-size: 120px;
+  margin-top: 10px;
+  padding-top: 20px;
 }
 
-.interests {
-  width: 600px;
+#home p {
+  width: 50%;
+  margin: auto
+}
+
+#about p {
+  text-align: center;
+  width: 65%;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 30px;
+}
+
+.photoapp {
+  border: solid black 2px;
+}
+/*To use when the cols have been commented in*/
+/*.interests {
+  width: 80%;
   border: solid 5px white;
   margin: auto;
-  width: 80%;
   text-align: center;
   display: table;
+}
+
+.interests .col:hover {
+  background-color: #8E9290;
+  border-color: red;
 }
 
 .interests div {
   border: solid 2px black;
   display: inline-block;
-  display: table-cell;
+  width: 30%;
+  margin: 10px;
+  vertical-align: top;
 }
+
+.interests img {
+  height:auto;
+  width: 100px;
+  border-radius: 500px;
+}*/
 
 .experience_logo {
   margin: auto;
@@ -96,12 +134,24 @@ h1 {
   display: inline-block;
 }
 
-.listing_projects img {
-  width: 400px;
+.past_projects {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.thumbnails {
+  width: 45%;
   height: auto;
 }
 
+.contact {
+  text-align: center;
+}
+
 .contact li {
+  border: solid #181E23 2px;
+  border-radius: 10px;
   display: inline-block; 
   padding: 30px;
   margin-right: 50px;
@@ -109,12 +159,32 @@ h1 {
 }
 
 .contact li:hover{
-  background-color: red;
+  background-color: #181E23;
+  border: solid 2px #EBCB93;
+  color: #EBCB93; 
 }
 
-#tooltip {
-  display:none;
-border:1px solid #F00;
-width:150px;
+.skill {
+  border: black solid 2px;
 }
+
+@media only screen and (max-width: 780px) {
+  .individual_project {
+    width: 80%;
+    margin: none;
+  }
+
+  .thumbnail {
+    width: 100%;
+  }
+
+  .interests {
+    width: 80%;
+  }
+
+  .col {
+    background-color: 100%;
+  }
+
+  }
 
