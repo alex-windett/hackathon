@@ -10,7 +10,7 @@ body {
 border:1px solid #F00;
 width:150px;
 }
-
+/*mail me button*/
 .wrap {
   margin: 40px auto;
   position: relative;
@@ -71,6 +71,7 @@ width:150px;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
 #littlenav a {
   float: left;
   width: 48px;
@@ -136,6 +137,10 @@ width:150px;
   -moz-opacity: 0;
   -khtml-opacity: 0;
   opacity: 0;
+}
+
+.codepen {
+  margin: 0px;
 }
 #littlenav a.codepen {
   -moz-transition: opacity 700ms ease-out 3000ms;

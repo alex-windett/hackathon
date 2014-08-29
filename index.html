@@ -9,8 +9,10 @@
   <link rel="stylesheet" type="text/css" media="all" href="css/grid.css" />
   <link rel="stylesheet" type="text/css" media="all" href="css/stylesheet.css" />
   <link rel="stylesheet" type="text/css" media="all" href="css/buttons.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="css/tooltip.css" />
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
   <link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
 
 
   <script src="js/jquery-1.11.0.js"></script>
@@ -39,8 +41,8 @@
   <section id="home">
     <h1>Alex Windett</h1>
     <!-- <p>Readymade keytar vegan put a bird on it. Brooklyn Banksy mlkshk aesthetic.</p> -->
-    <a id="nav_about" class="about_button" href="#about">Scroll Down to Find Out More</a>
-      <!-- flows down to about section -->
+    <!-- <a id="nav_about" class="about_button" href="#about">Scroll Down to Find Out More</a>
+      <!-- flows down to about section --> -->
   </section>
 
   <section id="about">
@@ -72,21 +74,55 @@
   
   <section id="skills">
     <h1>Skills</h1>
+    <div class="experience_logo">
+    <div class="techskills">
+    <!-- tooltips -->
+    <small class="info"></small>
 
-      <div class="experience_logo">
-      <ul>
-        <li><img src="images/html_5.png"></li>
-        <li><img src="images/css_3.png"></li>
-        <li><img src="images/git.png"></li>
-        <li><img src="images/jquery.png"></li>
-        <li><img src="images/sass-logo-new.png"></li>
-        <li id="skill_1"><img src="images/javascript.png"></li>
-        <li><img src="images/haml.png"></li>
-        <li><img src="images/rails.png"></li>
-      </ul>
+    <a href="#" class="tp" href="#" >
+      <span data-title="Rails" data-content="Ruby on Rails, often simply referred to as Rails, is an open source web application framework written in Ruby. Rails is a full-stack framework that emphasizes the use of well-known software engineering patterns and paradigms, includingconvention over configuration (CoC), don't repeat yourself (DRY), the active record pattern, and model–view–controller(MVC).[3]"></span>
+      <img src="images/rails.png" alt="" /></a>
 
+      <a href="#" class="tp" href="#" >
+        <span data-title="Ajax" data-content="Ajax (Asynchronous JavaScript and XML) is a method of building interactive applications for the Web that process user requests immediately. Ajax combines several programming tools including JavaScript, dynamic HTML (DHTML), Extensible Markup Language (XML), cascading style sheets (CSS), the Document Object Model (DOM), and the Microsoft object, XMLHttpRequest. 
+        Ajax allows content on Web pages to update immediately when a user performs an action, unlike an HTTPrequest, during which users must wait for a whole new page to load. For example, a weather forecasting site could display local conditions on one side of the page without delay after a user types in a zip code."></span>
+        <img src="images/ajax.jpg" alt="" /></a>
+
+    <a href="#" class="tp" href="#" >
+      <span data-title="HAML" data-content="Haml is a markup language that’s used to cleanly and simply describe the HTML of any web document without the use of inline code. Haml functions as a replacement for inline page templating systems such as PHP, ASP, and ERB, the templating language used in most Ruby on Rails applications. However, Haml avoids the need for explicitly coding HTML into the template, because it itself is a description of the HTML, with some code to generate dynamic content."></span>
+      <img src="images/haml.png"  alt="" /></a>
+
+    <a href="#" class="tp" href="#" >
+      <span data-title="JavaScript" data-content="JavaScript (JS) is a dynamic computer programming language.[5] It is most commonly used as part of web browsers, whose implementations allow client-side scripts to interact with the user, control the browser, communicateasynchronously, and alter the document content that is displayed.[5] It is also being used in server-side network programming (with Node.js), game development and the creation of desktop and mobile applications."></span>
+      <img src="images/javascript.png" alt="" /></a>
+
+    <a href="#" class="tp" href="#" >
+      <span data-title="SASS" data-content="Sass is the most mature, stable, and powerful professional grade CSS extension language in the world."></span>
+      <img src="images/sass-logo-new.png" alt="" /></a>
+
+    <a href="#" class="tp" href="#" >
+      <span data-title="JQuery" data-content="jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers."></span>
+      <img src="images/jquery.png" alt="" /></a>
+
+
+    <a href="#" class="tp" href="#" >
+      <span data-title="GIT" data-content="GIT:
+      A free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+      Easy to learn and has a tiny footprint with lightning fast performance. It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workflows.
+"></span>
+      <img src="images/git.png" alt="" /></a>
+
+
+    <a href="#" class="tp" href="#" >
+      <span data-title="CSS3" data-content="Cascading Style Sheets (CSS) is a style sheet language used for describing the look and formatting of a document written in a markup language. While most often used to style web pages and user interfaces written in HTML andXHTML, the language can be applied to any kind of XML document, including plain XML, SVG and XUL. CSS is a cornerstone specification of the web and almost all web pages use CSS style sheets to describe their presentation."></span>
+      <img src="images/css_3.png"  alt="" /></a>
+
+
+    <a href="#" class="tp" href="#" >
+      <span data-title="HTML5" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit."></span>
+      <img src="images/html_5.png" alt="" /></a>
     </div>
-
+</div>
   </section>
   
   <section id="experience">
@@ -142,6 +178,8 @@
             <div class="envelope"></div>
           </div>
         </a>
+
+
       </div>
 <!-- active icons for github, codepen and linkedIn. But can't get them to show in the right place -->
       <nav id="littlenav">
@@ -161,10 +199,7 @@
           <div class='h'></div>
         </a>
       </nav>
-      
       <ul>
-        <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
-        <li><a href="#" target="_blank"><i class="fa fa-github-square"></i> View my Github</a></li>
         <li><a href="/downloads/" target="_blank" download="first_last_CV.doc"><i class="fa fa-file-text"></i> Download CV</a></li>
       </ul>
     </div>
