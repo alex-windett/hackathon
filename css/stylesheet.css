@@ -34,12 +34,6 @@ nav a:hover {
   background-color: #dfac52;
 }
 
-.about_button {
-  margin-left: 40%;
-  border: 2px solid black;
-  padding: 20px;
-}
-
 section {
   height: 900px;
   width: 100%;
@@ -75,10 +69,17 @@ h1 {
   padding-top: 20px;
 }
 
+.about_button {
+  margin-left: 40%;
+  border: 2px solid black;
+  padding: 20px;
+}
+
 #home p {
   width: 50%;
   margin: auto
 }
+
 
 #about p {
   text-align: center;
@@ -168,14 +169,39 @@ h1 {
   border: black solid 2px;
 }
 
+
 @media only screen and (max-width: 780px) {
-  .individual_project {
-    width: 80%;
+
+  section {
+    height: 1500px;
+  }
+
+  .about_button {
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+  .experience_logo {
+    width: 95%;
+  }
+
+  .experience_logo li {
+    width: 30%;
+    height: auto;
+    margin: 10px;
+  }
+
+  .past_projects {
+    width: 95%;
     margin: none;
   }
 
-  .thumbnail {
-    width: 100%;
+  .thumbnails {
+    height: 20%;
+    width: auto;
+    padding: 10px;
   }
 
   .interests {
@@ -186,5 +212,14 @@ h1 {
     background-color: 100%;
   }
 
+  .contact {
+    width: 90%;
+    margin: 0 auto;
   }
 
+  .contact li {
+    width: 25%;
+    margin-bottom: 20px;
+  }
+
+  }
