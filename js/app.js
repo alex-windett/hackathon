@@ -20,11 +20,40 @@ $(function(){
     $.scrollTo(
       $(this).attr("href"),
       {
-        duration: 1000,   
+        duration: 2000,   
         offset: {"left": 0, "top": 10}
       }
     );
   });
 
+  $("#thumbnail_1").mouseenter(function(){
+    $(".1").show()
+  });
+  $("#thumbnail_1").mouseout(function(){
+     $(".1").hide()
+  });
+
+  $("#thumbnail_2").mouseenter(function(){
+    $(".2").show()
+  });
+  $("#thumbnail_2").mouseout(function(){
+     $(".2").hide()
+  });
+
+  $("#thumbnail_3").mouseenter(function(){
+    $(".3").show()
+  });
+  $("#thumbnail_3").mouseout(function(){
+     $(".3").hide()
+  });
+
+// $("#skill_1").dialog({
+//   autoOpen:false,
+//   show: {
+//     effect: "blind",
+//     duration: 1000
+//   }.
+//   }
+// })
 
 });

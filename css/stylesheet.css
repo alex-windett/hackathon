@@ -1,13 +1,15 @@
 body {
   font-family: 'Raleway', sans-serif;
-  background-image: url("http://wallalay.com/wp-content/uploads/2014/06/Desktop-Wallpapers-51.jpg");
+/*  background-image: url("http://wallalay.com/wp-content/uploads/2014/06/Desktop-Wallpapers-51.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
+  /*background-color: #fcf6e0;*/
+  color: #EBCB93;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #EBCB93;
 }
 
 nav {
@@ -17,15 +19,18 @@ nav {
 }
 
 nav a {
-  border: solid black;
-  color: white;
-  background: black;
+  color: #181E23;
+  background: #EBCB93;
   padding: 10px;
   font-size: 15px;
   margin-top: 20px;
   list-style: none;
   display:block;
   margin-left: 10px;
+}
+
+nav a:hover {
+  background-color: #dfac52;
 }
 
 .about_button {
@@ -36,35 +41,38 @@ nav a {
 
 section {
   height: 900px;
+  width: 100%;
 }
 
 section h1 {
   text-align: center;
 }
 
-section, #home{
-  /*background-color: pink;*/
+
+#home{
+  background-color: #fcf6e0;
 }
 
 #about{
-  background-color: #FAFBFA;
+  background-color: #181E23;
 }
 #skills{
-  /*background-color: green;*/
+  background-color:#181E23;
 }
 #experience{
-  background-color: #FAFBFA;
+  background-color: #181E23;
 }
 #projects{
-  /*background-color: orange;*/
+  background-color:#181E23;
 }
 #contact{
-  background-color: #FAFBFA;
+  background-color: #181E23;
 }
 
 h1 {
   font-size: 120px;
   margin-top: 10px;
+  padding-top: 20px;
 }
 
 #home p {
@@ -72,11 +80,22 @@ h1 {
   margin: auto
 }
 
-.interests {
+#about p {
+  text-align: center;
+  width: 65%;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 30px;
+}
+
+.photoapp {
+  border: solid black 2px;
+}
+/*To use when the cols have been commented in*/
+/*.interests {
   width: 80%;
   border: solid 5px white;
   margin: auto;
-  /*width: 80%;*/
   text-align: center;
   display: table;
 }
@@ -98,7 +117,7 @@ h1 {
   height:auto;
   width: 100px;
   border-radius: 500px;
-}
+}*/
 
 .experience_logo {
   margin: auto;
@@ -121,7 +140,7 @@ h1 {
   margin: auto;
 }
 
-#thumbnail {
+.thumbnails {
   width: 45%;
   height: auto;
 }
@@ -131,7 +150,7 @@ h1 {
 }
 
 .contact li {
-  border: solid black 2px;
+  border: solid #181E23 2px;
   border-radius: 10px;
   display: inline-block; 
   padding: 30px;
@@ -140,9 +159,14 @@ h1 {
 }
 
 .contact li:hover{
-  background-color: red;
+  background-color: #181E23;
+  border: solid 2px #EBCB93;
+  color: #EBCB93; 
 }
 
+.skill {
+  border: black solid 2px;
+}
 
 @media only screen and (max-width: 780px) {
   .individual_project {
