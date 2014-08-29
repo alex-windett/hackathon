@@ -47,13 +47,10 @@ $(function(){
      $(".3").hide()
   });
 
-// $("#skill_1").dialog({
-//   autoOpen:false,
-//   show: {
-//     effect: "blind",
-//     duration: 1000
-//   }.
-//   }
-// })
+
+  $("#skill_1").tooltip({
+    content: "JavaScript",
+    track: true
+  }).tooltip("open");
 
 });
