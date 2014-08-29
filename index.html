@@ -22,59 +22,66 @@
 </head>
 <body>
 
-<!-- <img id='menu_icon' src="menu_icon.png"> -->
+  <!-- <img id='menu_icon' src="menu_icon.png"> -->
 
-<div id='#menu'>
-  <nav>
+  <div id='#menu'>
+    <nav>
       <a id="nav_about"  href="#about">About</a>
       <a id="nav_skills"  href="#skills">Skills</a>
       <a id="nav_experience"  href="#experience">Experience</a>
       <a id="nav_projects"  href="#projects">Projects</a>
       <a id="nav_contact"  href="#contact">Contact</a> 
-  </nav>
-</div>
+    </nav>
+  </div>
 
   <section id="home">
     <h1>Alex Windett</h1>
     <p>Readymade keytar vegan put a bird on it. Brooklyn Banksy mlkshk aesthetic.</p>
     <a id="nav_about" class="nav" href="#about">Discover More</a>
-      <!-- flows down to about section -->
+    <!-- flows down to about section -->
   </section>
 
   <section id="about">
     <h1>About</h1>
-      <div class="interests">
-        <div class="col_1">
-          <h2>Something Interesting</h2>
-          <p>Readymade keytar vegan put a bird on it. Brooklyn Banksy mlkshk aesthetic.</p>
-        </div>
-        <div class="col_2">
-          <h2>Something Interesting</h2>
-          <p>Readymade keytar vegan put a bird on it. Brooklyn Banksy mlkshk aesthetic.</p>
-        </div>
-        <div class="col_3">
-          <h2>Something Interesting</h2>
-          <p>Readymade keytar vegan put a bird on it. Brooklyn Banksy mlkshk aesthetic.</p>
-        </div>
+    <div class="interests">
+      <div class="col_1">
+        <h2>Something Interesting</h2>
+        <p>Readymade keytar vegan put a bird on it. Brooklyn Banksy mlkshk aesthetic.</p>
       </div>
+      <div class="col_2">
+        <h2>Something Interesting</h2>
+        <p>Readymade keytar vegan put a bird on it. Brooklyn Banksy mlkshk aesthetic.</p>
+      </div>
+      <div class="col_3">
+        <h2>Something Interesting</h2>
+        <p>Readymade keytar vegan put a bird on it. Brooklyn Banksy mlkshk aesthetic.</p>
+      </div>
+    </div>
   </section>
   
   <section id="skills">
     <h1>Skills</h1>
-      <div class="experience_logo">
-      <li>
-        <img src="html_logo.png">
-        <img src="html_logo.png">
-        <img src="html_logo.png">
-        <img src="html_logo.png">
-        <img src="html_logo.png">
-        <img src="html_logo.png">
-      </li>
+    <div class="experience_logo">
+      <table>
+        <tr>
+          <td><img src="html_logo.png"></td>
+          <td><img src="html_logo.png"></td>
+          <td><img src="html_logo.png"></td>
+          <td><img src="html_logo.png"></td>
+        </tr>
+        <tr>
+          <td><img src="html_logo.png"></td>
+          <td><img src="html_logo.png"></td>
+          <td><img src="html_logo.png"></td>
+          <td><img src="html_logo.png"></td>
+        </tr>
+      </table>
     </div>
+
   </section>
   
   <section id="experience">
-    <h1>Expirience</h1>
+    <h1>Experience</h1>
 
   </section>
   
@@ -105,9 +112,37 @@
   <section id="contact">
     <h1>Contact</h1>
     <div class="contact">
+
+      <!-- email button -->
+      <div class="wrap">
+        <a href="mailto:someone@example.com">
+          <div class="circle">
+            <div class="envelope-top"></div>
+            <div class="envelope"></div>
+          </div>
+        </a>
+      </div>
+<!-- active icons for github, codepen and linkedIn. But can't get them to show in the right place -->
+      <nav id="littlenav">
+        <a class='github' href='https://github.com/??' target='_blank'>
+          Github
+          <div class='i'></div>
+          <div class='h'></div>
+        </a>
+        <a class='codepen' href='http://codepen.io/??' target='_blank'>
+          Codepen
+          <div class='i'></div>
+          <div class='h'></div>
+        </a>
+        <a class='linkedin' href='http://www.linkedin.com/in/??' target='_blank'>
+          Linkedin
+          <div class='i'></div>
+          <div class='h'></div>
+        </a>
+      </nav>
+      
       <ul>
         <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
-        <li><a href="#" target="_blank"><i class="fa fa-envelope"></i> Message Me</a></li>
         <li><a href="#" target="_blank"><i class="fa fa-github-square"></i> View my Github</a></li>
         <li><a href="#" target="_blank"><i class="fa fa-file-text"></i> Download CV</a></li>
       </ul>
