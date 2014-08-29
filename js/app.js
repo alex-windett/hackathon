@@ -17,7 +17,6 @@ $(function(){
 
 // scroll to certain section
   $nav_links.click(function(event){
-     // debugger
     $.scrollTo(
       $(this).attr("href"),
       {
@@ -26,26 +25,6 @@ $(function(){
       }
     );
   });
-
-  // $("#about").waypoint(function(down){
-  //   alert("about");
-  // })
-
-  // $("#skills").waypoint(function(down){
-  //   alert("skills");
-  // })
-
-  // $("#experience").waypoint(function(down){
-  //   alert("experience");
-  // })
-
-  // $("#projects").waypoint(function(down){
-  //   alert("projects");
-  // })
-
-  // $("#contact").waypoint(function(down){
-  //   alert("contact");
-  // })
 
 
 });
