@@ -1,8 +1,7 @@
 body {
   background: @window;
   color: @font-color;
-  font-family: 'Nobile', Arial, Sans;
-  /*font-family: 'Raleway', sans-serif;*/
+  font-family: 'Raleway', sans-serif;
 }
 
 #tooltip {

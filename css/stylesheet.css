@@ -30,6 +30,10 @@ nav a {
   margin-left: 10px;
 }
 
+#littlenav {
+  background-color: #181E23
+}
+
 nav a:hover {
   background-color: #dfac52;
 }
@@ -171,7 +175,6 @@ h1 {
 
 
 @media only screen and (max-width: 780px) {
-
   section {
     height: 1500px;
   }
