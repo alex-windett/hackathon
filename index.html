@@ -2,6 +2,8 @@
 <head>
   <title>Alex Windett</title>
 
+  <meta charset="utf-8">
+
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
   <link rel="stylesheet" type="text/css" media="all" href="css/grid.css" />
@@ -9,14 +11,14 @@
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
   <link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
 
+
   <script src="js/jquery-1.11.0.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
-  <script src="js/ui-bootstrap-tpls-0.11.0.js"></script>
+
   <script src="js/app.js"></script>
   <script src="js/waypoints.min.js"></script>
   <script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
   <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-  <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
 </head>
 <body>
@@ -25,7 +27,7 @@
 
 <div id='#menu'>
   <nav>
-      <a id="nav_about"  href="#about">About</a>
+      <a id="nav_about"  href="#about">Who Am I</a>
       <a id="nav_skills"  href="#skills">Skills</a>
       <a id="nav_experience"  href="#experience">Experience</a>
       <a id="nav_projects"  href="#projects">Projects</a>
@@ -41,8 +43,8 @@
   </section>
 
   <section id="about">
-    <h1>About</h1>
-      <div class="interests">
+    <h1>Who Am I</h1>
+<!--       <div class="interests">
         <div class="col">
           <h2>Something Interesting</h2>
           <img src="images/pencil.png">
@@ -51,31 +53,35 @@
         <div class="col">
           <h2>Something Interesting</h2>
           <img src="images/ga_logo.png">
-
           <p>Readymade keytar vegan put a bird on it. Brooklyn Banksy mlkshk aesthetic.</p>
         </div>
         <div class="col">
           <h2>Something Interesting</h2>
           <img src="images/pencil.png">
-
           <p>Readymade keytar vegan put a bird on it. Brooklyn Banksy mlkshk aesthetic.</p>
         </div>
-      </div>
+      </div> -->
+      <p>Scenester next level ugh Bushwick pop-up, 3 wolf moon whatever hella Carles tofu kitsch dreamcatcher squid. Before they sold out Helvetica Brooklyn, Banksy cray ugh actually. Yr gluten-free beard occupy. Narwhal DIY plaid, normcore YOLO pour-over viral kitsch PBR Marfa hoodie Odd Future chambray you probably haven't heard of them.</p>
+      
+      <p>Scenester next level ugh Bushwick pop-up, 3 wolf moon whatever hella Carles tofu kitsch dreamcatcher squid. Before they sold out Helvetica Brooklyn, Banksy cray ugh actually. Yr gluten-free beard occupy. Narwhal DIY plaid, normcore YOLO pour-over viral kitsch PBR Marfa hoodie Odd Future chambray you probably haven't heard of them</p>
+
+      <p>Scenester next level ugh Bushwick pop-up, 3 wolf moon whatever hella Carles tofu kitsch dreamcatcher squid. Before they sold out Helvetica Brooklyn, Banksy cray ugh actually. Yr gluten-free beard occupy. Narwhal DIY plaid, normcore YOLO pour-over viral kitsch PBR Marfa hoodie Odd Future chambray you probably haven't heard of them.</p>
+
   </section>
   
   <section id="skills">
     <h1>Skills</h1>
       <div class="experience_logo">
-      <li>
-        <img src="images/html_5.png">
-        <img src="images/css_3.png">
-        <img src="images/git.png">
-        <img src="images/jquery.png">
-        <img src="images/sass-logo-new.png">
-        <img src="images/javascript.png">
-        <img src="images/haml.png">
-        <img src="images/rails.png">
-      </li>
+      <ul>
+        <li><img src="images/html_5.png"></li>
+        <li><img src="images/css_3.png"></li>
+        <li><img src="images/git.png"></li>
+        <li><img src="images/jquery.png"></li>
+        <li><img src="images/sass-logo-new.png"></li>
+        <li id="skill_1"><img src="images/javascript.png"></li>
+        <li><img src="images/haml.png"></li>
+        <li><img src="images/rails.png"></li>
+      </ul>
     </div>
   </section>
   
@@ -109,10 +115,14 @@
 
     <div class="past_projects">
       <div class="individual_project">
-        <img id="thumbnail" src="photoapp.png">
-        <img id="thumbnail" src="random.png">
-        <img id="thumbnail" src="tic.png">
+        <img class="thumbnails" id="thumbnail_1" src="photoapp.png">
+        <img class="thumbnails" id="thumbnail_2" src="random.png">
+        <img class="thumbnails" id="thumbnail_3" src="tic.png">
       </div>
+      <br>
+      <div style="display: none" class="1">This was my second project and is about photo uploading</div>
+          <div style="display: none" class="2">The BBC homepage website</div>
+           <div style="display: none" class="3">First project where you can play single or two play tic-tac-toe; against the computor or a friend</div>
     </div>
   </section>
   
