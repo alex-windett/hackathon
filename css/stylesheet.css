@@ -30,6 +30,15 @@ nav a {
   margin-left: 10px;
 }
 
+button {
+  border-radius: 20px;
+}
+
+hover:button {
+  border: solid red 1px;
+  background-color: lightgreen;
+}
+
 #littlenav {
   margin: 0px;
 }
