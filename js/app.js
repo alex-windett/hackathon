@@ -20,7 +20,7 @@ $(function(){
     $.scrollTo(
       $(this).attr("href"),
       {
-        duration: 2000,   
+        duration: 950,   
         offset: {"left": 0, "top": 10}
       }
     );

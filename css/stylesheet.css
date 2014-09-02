@@ -30,10 +30,6 @@ nav a {
   margin-left: 10px;
 }
 
-#littlenav {
-  background-color: #181E23
-}
-
 nav a:hover {
   background-color: #dfac52;
 }
@@ -43,12 +39,17 @@ section {
   width: 100%;
 }
 
+
 section h1 {
   text-align: center;
 }
 
 #home{
   background-color: #fcf6e0;
+}
+
+#home h1 {
+  padding-top: 15%;
 }
 
 #about{
@@ -175,6 +176,12 @@ h1 {
 
 
 @media only screen and (max-width: 780px) {
+
+h1  { 
+  font-size: 80px;
+}
+
+
   section {
     height: 1500px;
   }
