@@ -30,6 +30,32 @@ nav a {
   margin-left: 10px;
 }
 
+
+#littlenav {
+  background-color: #181E23
+
+button {
+  border-radius: 20px;
+}
+
+hover:button {
+  border: solid red 1px;
+  background-color: lightgreen;
+}
+
+#littlenav {
+  margin: 0px;
+}
+
+#littlenav a {
+  margin: 0px;
+}
+
+nav a:hover {
+  background-color: #dfac52;
+
+}
+
 nav a:hover {
   background-color: #dfac52;
 }
@@ -56,7 +82,7 @@ section h1 {
   background-color: #181E23;
 }
 #skills{
-  background-color:#181E23;
+  background-color:white;
 }
 #experience{
   background-color: #181E23;
@@ -65,7 +91,7 @@ section h1 {
   background-color:#181E23;
 }
 #contact{
-  background-color: #181E23;
+  background-color: white;
 }
 
 h1 {
@@ -125,6 +151,10 @@ h1 {
   border-radius: 500px;
 }*/
 
+.techskills {
+  max-width: 100%;
+  margin-left: 200px;
+}
 .experience_logo {
   margin: auto;
   width: 900px;
